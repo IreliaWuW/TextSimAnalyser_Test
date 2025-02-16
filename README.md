@@ -28,7 +28,7 @@ I --> J[Result Aggregation]
 **Intelligent Hybrid Approach for Efficient Text Comparison**  
 *Combining Traditional Algorithms with Deep Learning for Optimal Performance*
 
-## 🚀 Key Features
+## Key Features
 - **Hybrid Computation Architecture**  
   `Jaccard` → `Cosine` → `BERT` staged analysis (saves GPU time vs pure-BERT approach)
 - **Multi-Language Support**  
