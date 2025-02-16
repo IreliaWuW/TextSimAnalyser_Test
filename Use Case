@@ -1,0 +1,10 @@
+from textsimanalyser import TextAnalyzer
+
+analyzer = TextAnalyzer()
+results = analyzer.batch_analyze(
+    texts=["ML Exploration", "DL Methodologies", "AI Tech Report"],
+    output_format='excel'
+)
+
+# Ouput：
+# | Text alignment | Jaccard | cosine similarity | BERT | Overall |
