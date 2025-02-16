@@ -1,0 +1,11 @@
+from sentence_transformers import SentenceTransformer
+
+class BertSimilarity:
+    def __init__(self):
+        self.model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+    
+    def encode_text(self, text):
+        return self.model.encode(text, convert_to_tensor=True)
+    
+    def calculate_similarity(self, vec1, vec2):
+        return cosine_similarity(vec1, vec2).item()
