@@ -1,0 +1,5 @@
+def generate_heatmap(sim_matrix, labels):
+    plt.figure(figsize=(10,8))
+    sns.heatmap(sim_matrix, annot=True, xticklabels=labels, yticklabels=labels)
+    plt.title("Text Similarity Matrix")
+    plt.savefig('output/similarity_heatmap.png')
