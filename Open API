@@ -1,0 +1,7 @@
+@app.post("/api/analyze")
+async def analyze_texts(AnalyzeRequest):
+    return {
+        "jaccard": jaccard_score,
+        "cosine": cosine_score,
+        "bert": bert_score
+    }
