@@ -1,0 +1,12 @@
+def hierarchical_similarity(text1, text2):
+    # 第一阶段：传统算法快速筛选
+    jaccard = calculate_jaccard(text1, text2)  # [[4]]
+    cosine = calculate_cosine(text1, text2)    # [[5]]
+    
+    # 动态阈值机制 (参考证据10)
+    if (jaccard + cosine)/2 < config.THRESHOLD:
+        return {'jaccard':jaccard, 'cosine':cosine}
+    
+    # 第二阶段：BERT深度分析
+    bert_score = calculate_bert_similarity(text1, text2)  # [[17]]
+    return {'jaccard':jaccard, 'cosine':cosine, 'bert':bert_score}
