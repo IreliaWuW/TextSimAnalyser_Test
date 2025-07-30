@@ -1,18 +1,5 @@
 # TextSimAnalyser: Multi-Stage Text Similarity Analysis Toolkit
 
-mermaid
-graph TD
-A[Text Input] --> B(Preprocessing)
-B --> C{Length Check}
-C -->|Short Text| D[Jaccard Analysis]
-C -->|Long Text| E[Cosine Similarity]
-D --> F{Threshold Check}
-E --> F
-F -->|Below 0.7| G[Quick Result]
-F -->|Above 0.7| H[BERT Embedding]
-H --> I[Semantic Similarity]
-I --> J[Result Aggregation]
-
 **Intelligent Hybrid Approach for Efficient Text Comparison**  
 *Combining Traditional Algorithms with Deep Learning for Optimal Performance*
 
