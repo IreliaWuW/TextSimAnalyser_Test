@@ -1,17 +1,5 @@
 # TextSimAnalyser: Multi-Stage Text Similarity Analysis Toolkit
 
-textsimanalyser/
-├── core/
-│   ├── preprocessing.py  # Preprocessing
-│   ├── similarity.py     # Multi-staged
-│   └── bert_model.py     # BERT
-├── utils/
-│   ├── config.py         # Parameter
-│   └── visualizer.py     # Visuals
-├── tests/                # UT
-├── requirements.txt
-└── README.md
-
 mermaid
 graph TD
 A[Text Input] --> B(Preprocessing)
